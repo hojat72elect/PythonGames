@@ -15,7 +15,7 @@ screen: Surface | SurfaceType = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HE
 player: Rect | RectType = pygame.Rect((300, 250, 50, 50))
 run: bool = True
 while run:
-    screen.fill((0, 0, 0))
+    screen.fill((0, 0, 0)) # refreshes the screen with color black
     pygame.draw.rect(screen, (255, 0, 0), player)
     key: ScancodeWrapper = pygame.key.get_pressed()
     if key[pygame.K_LEFT]:
